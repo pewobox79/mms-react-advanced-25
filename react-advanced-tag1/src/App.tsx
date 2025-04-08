@@ -10,10 +10,6 @@ import DogImagesWithLoader from './components/exercises/HocExercise/DogImg'
 import ImmerExercise from './components/exercises/ImmerExercise'
 
 
-
-
-
-
 function App() {
 
   return <MainLayout>
