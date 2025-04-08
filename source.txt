@@ -1,0 +1,20 @@
+#PATTERN
+#Hooks pattern
+https://www.patterns.dev/react/hooks-pattern/
+
+
+#Design patterns for senior developer
+https://www.youtube.com/watch?v=MdvzlDIdQ0o
+
+#performance optimization
+https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimization/?utm_source=importreact.beehiiv.com&utm_medium=newsletter&utm_campaign=smart-ways-to-optimize-performance-in-react
+
+#react-scan
+https://github.com/aidenybai/react-scan#readme
+https://react-scan.com/
+
+#mantine
+https://mantine.dev/core/portal/
+
+
+

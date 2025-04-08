@@ -7,7 +7,7 @@ export default function MainLayout({ children }: { children: ReactNode | ReactEl
     const [clicked, setClicked] = useState(false)
 
     function handleClick() {
-        
+
         setClicked(!clicked)
         console.log("clicked inner", clicked)
     }
@@ -16,7 +16,7 @@ export default function MainLayout({ children }: { children: ReactNode | ReactEl
     return <>
         <Header />
         {children}
-        {/* <button onClick={handleClick}>click</button> */}
+        <button onClick={handleClick}>click</button>
         <Footer />
     </>
 }

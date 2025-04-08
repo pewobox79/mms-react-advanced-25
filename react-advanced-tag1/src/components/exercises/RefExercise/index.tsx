@@ -1,8 +1,12 @@
 import { useRef, useState } from "react";
+import { useCounterStore } from "../../../stores/useStore";
+import { createPortal } from "react-dom";
 import useLocalStorage from "../../../hooks/useLocalStorage";
+import Modal from "../../Modal";
 
 export default function RefExercise() {
-
+    const { initValue } = useCounterStore();
+    const [isOpen, setIsOpen] = useState(false);
 
     const { setStoredValue, removeLocalStorage } = useLocalStorage("reactUser")
     //externer Ref Speicher
@@ -20,7 +24,7 @@ export default function RefExercise() {
         }
         setStoredValue(userData)
         emailRef?.current?.focus();
-        console.log("submit data ",userData )
+        console.log("submit data ", userData)
     }
 
     //change event example
@@ -30,13 +34,15 @@ export default function RefExercise() {
         removeLocalStorage()
     }
 
-    function handleChange(event:{target:{name: string, value: string}}) {
+    function handleChange(event: { target: { name: string, value: string } }) {
         setFormData({ ...formData, [event.target.name]: event.target.value })
     }
 
     console.log("formdata", formData)
 
     return <div>
+        <h3>{initValue}</h3>
+        <button onClick={() => setIsOpen(!isOpen)}>open portal</button>
         <div>
             <h3>references</h3>
             <input type="text" name="email" placeholder="email" ref={emailRef} /><br />
@@ -50,6 +56,8 @@ export default function RefExercise() {
             <input type="text" name="city" placeholder="Stadt" onChange={handleChange} /><br />
             <button onClick={handleChangeSubmit}>submit</button>
         </div>
+
+        {isOpen && createPortal(<Modal />, document.body)}
 
     </div>
 
