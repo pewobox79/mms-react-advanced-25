@@ -1,9 +1,13 @@
-function Footer (){
+import mobStore from "../stores/MobXStore"
+import { observer } from "mobx-react-lite"
 
-    console.log("footer rendered")
+const Footer = observer(()=>{
+
+    console.log("footer rendered");
+    
     return <footer>
-        <h2>Footer</h2>
+        <h2>{mobStore.message}</h2>
     </footer>
-}
+})
 
 export default Footer

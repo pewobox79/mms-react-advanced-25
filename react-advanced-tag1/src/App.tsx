@@ -19,14 +19,15 @@ function App() {
   return <MainLayout>
 
     <Heading />
-   {/* <EffectExercise/> */}
+    {/* <EffectExercise/> */}
     {/* <UserExercise/> */}
-    <UserOverview />
+    
     {/* <MemoCallback/> */}
+    <ImmerExercise />
+   <DogImagesWithLoader/>
+    <RefExercise />
+    <UserOverview />
 
-<DogImagesWithLoader/>
-    <RefExercise/>
-  
 
 
   </MainLayout>

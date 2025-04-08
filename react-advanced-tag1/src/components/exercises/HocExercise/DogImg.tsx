@@ -8,7 +8,6 @@ function DogImg({data}:{data:LoaderData}){
     ))
 }
 
-
 const DogImagesWithLoader = withLoader(DogImg, "https://dog.ceo/api/breed/labrador/images/random/6")
 
 export default DogImagesWithLoader;

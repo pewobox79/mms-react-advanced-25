@@ -13,8 +13,27 @@ https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimizatio
 https://github.com/aidenybai/react-scan#readme
 https://react-scan.com/
 
-#mantine
+#mantine CSS component librarie
 https://mantine.dev/core/portal/
+
+
+#MobX
+https://mobx.js.org/README.html
+https://mobx.js.org/react-integration.html
+
+
+#ImmerJS
+alternative to updated nested objects much more simple rather then with useState() core feature
+immutable state in a more convenient way
+https://immerjs.github.io/immer/
+
+#authentification in react
+beispiel mit JWT
+https://cynoteck.com/blog-post/how-to-implement-authentication-in-react-typescript/
+
+
+
+
 
 
 
